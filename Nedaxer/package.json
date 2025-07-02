@@ -61,6 +61,8 @@
     "bip32": "^5.0.0-rc.0",
     "bip39": "^3.1.0",
     "bitcoinjs-lib": "^6.1.7",
+    "build": "^0.1.4",
+    "check": "^1.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -94,6 +96,7 @@
     "multer": "^2.0.1",
     "mysql2": "^3.14.1",
     "nodemailer": "^6.10.1",
+    "npm": "^11.4.2",
     "openai": "^5.6.0",
     "openid-client": "^6.6.1",
     "passport": "^0.7.0",
@@ -111,6 +114,7 @@
     "react-resizable-panels": "^2.1.4",
     "recharts": "^2.13.0",
     "rss-parser": "^3.13.0",
+    "run": "^1.5.0",
     "serve-static": "^2.2.0",
     "sharp": "^0.34.1",
     "tailwind-merge": "^2.5.4",
@@ -147,5 +151,8 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
