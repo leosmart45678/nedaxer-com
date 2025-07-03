@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development tsx index.ts",
+    "build": "esbuild index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "check": "tsc --noEmit",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.16.1",
+    "passport": "^0.7.0",
+    "bcrypt": "^5.1.1",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.16.2",
+    "mongodb": "^6.17.0",
+    "ws": "^8.18.0",
+    "drizzle-orm": "^0.44.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "esbuild": "^0.25.5",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "@types/passport": "^1.0.17"
+  }
+}
