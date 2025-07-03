@@ -17,5 +17,8 @@
     "check": "npm run check --workspace=server && npm run check --workspace=client",
     "db:push": "npm run db:push --workspace=server"
   },
-  "packageManager": "npm@10"
+  "packageManager": "npm@10",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21"
+  }
 }
