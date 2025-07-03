@@ -1,6 +1,6 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+  "include": [ "client/src//", "shared//", "server//*" ],
+  "exclude": [ "node_modules", "build", "dist", "/*.test.ts" ],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/.cache/typescript/tsbuildinfo",
@@ -8,7 +8,7 @@
     "target": "ES2022",
     "module": "ESNext",
     "strict": false,
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [ "ES2022", "DOM", "DOM.Iterable" ],
     "jsx": "preserve",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -17,14 +17,14 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "baseUrl": ".",
-    "types": ["node", "vite/client"],
+    "types": [ "node" ],
     "noImplicitAny": false,
     "strictNullChecks": false,
     "strictFunctionTypes": false,
     "paths": {
-      "@/*": ["./client/src/*"],
-      "@shared/*": ["./shared/*"],
-      "@assets/*": ["./client/src/assets/*"]
+      "@/": [ "./client/src/" ],
+      "@shared/": [ "./shared/" ],
+      "@assets/": [ "./client/src/assets/" ]
     }
   }
 }
